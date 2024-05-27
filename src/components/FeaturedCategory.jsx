@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+
+// import productData from '../data/Data'
 
 const FeaturedCategory = () => {
     const [products, setProducts]= useState([])
     useEffect(()=>{
         const fetchData = async ()=>{
             try{
-                const response = await fetch('./data/Data.jsx')
+                const response = await fetch("./data.json")
                 const data = await response.json();
                 setProducts(data)
             }catch(error){
-                console.log("Error fetch data:", error)
+                // console.log("Error fetch data:", error)
             }
         }
         fetchData()
@@ -23,9 +25,20 @@ const FeaturedCategory = () => {
             </div>
         </div>
         <div className='row'>
-            <div className='column'>
-                
-            </div>
+            {
+                products.map((id,image,title)=>(
+                    <div className='column' key={id}>
+                        <div className='image'>
+                            <img src={image} />
+                            title
+                        </div>
+                        <div className='info'>
+                            <h3>{title}title</h3>
+                        </div>
+                    </div>
+                ))
+            }
+
         </div>
 
     </section>

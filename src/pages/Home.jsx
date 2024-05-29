@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../components/Navbar'
 import { FaRegPaperPlane } from "react-icons/fa";
 import FeaturedCategory from '../components/FeaturedCategory';

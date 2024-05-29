@@ -56,11 +56,11 @@ const Navbar = () => {
           <ul className="">
   
             {menu.map(({ pageName, path, icon }) => (
-                <Link key={pageName} path={path}>
-                  <li className="flex items-center gap-2 p-2 text-primary-color text-xl">
+                  <li key={pageName} className="flex items-center gap-2 p-2 text-primary-color text-xl">
+                <Link  path={path}>
                     {icon} {pageName} 
-                  </li>
                 </Link>
+                  </li>
               ))}
           </ul>
         </div>
@@ -71,14 +71,16 @@ const Navbar = () => {
       <div className=" row justify-center flex ">
         <div className="column lg:block hidden ">
           <ul className="flex ">
-            {menu.map(({ pageName, path, icon }) => (
+            {
+              menu.map(({ pageName, path, icon }) => (
               <Link key={pageName} path={path}>
                 <li className="px-4 py-2  grid-flow-col content-center justify-center gap-1">
                   {" "}
                   {icon} {pageName}{" "}
                 </li>
               </Link>
-            ))}
+            ))
+            }
           </ul>
         </div>
         <div className='column grid grid-flow-col content-center justify-start lg:hidden '>

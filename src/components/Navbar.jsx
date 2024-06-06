@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/logo.svg";
 import { IoSearchOutline } from "react-icons/io5";
 // import { IoIosHeartEmpty } from "react-icons/io";
@@ -14,8 +14,8 @@ const Navbar = () => {
   }
   const menu = [
     { pageName: "Home", path: "/" },
-    { pageName: "Store", path: "/store" },
-    { pageName: "Deals", path: "/" },
+    { pageName: "Store", path: "/Store" },
+    { pageName: "Deals", path: "/Deals" },
     { pageName: "Contact", path: "/contact" },
   ];
   const iconMenu = [
@@ -54,14 +54,14 @@ const Navbar = () => {
         {/* mobile menu starts */}
         <div className={`absolute top-[100%] p-4 w-1/2 h-dvh bg-red-100 lg:hidden ${isMenuOpen ? "" : "hidden"}`}>
           <ul className="">
-  
+{/*   
             {menu.map(({ pageName, path, icon }) => (
                   <li key={pageName} className="flex items-center gap-2 p-2 text-primary-color text-xl">
                 <Link  path={path}>
                     {icon} {pageName} 
                 </Link>
                   </li>
-              ))}
+              ))} */}
           </ul>
         </div>
         {/* mobile menu ends */}
@@ -72,11 +72,10 @@ const Navbar = () => {
         <div className="column lg:block hidden ">
           <ul className="flex ">
             {
-              menu.map(({ pageName, path, icon }) => (
-              <Link key={pageName} path={path}>
+              menu.map((item, index) => (
+              <Link key={index} path={item.path}>
                 <li className="px-4 py-2  grid-flow-col content-center justify-center gap-1">
-                  {" "}
-                  {icon} {pageName}{" "}
+                  {item.icon} {item.pageName}
                 </li>
               </Link>
             ))

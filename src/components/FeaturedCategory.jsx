@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import productData from './data'
+import productData from '../data/data'
 
 const FeaturedCategory = () => {
 
@@ -16,14 +16,14 @@ const FeaturedCategory = () => {
     <section className='lg:container lg:mx-auto py-8 px-4'>
         <div className='row mb-8'>
             <div className='column'>
-                <h2 className='lg:text-3xl sm:text-3xl text-2xl   font-primary-font font-black text-[#253d4e]'>Featured Category</h2>
+                <h2 className='lg:text-3xl sm:text-3xl text-2xl font-primary-font font-black text-[#253d4e]'>Featured Products</h2>
 
             </div>
         </div>
         <div className='row grid lg:grid-cols-8 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4'>
             {
                 products.map((item)=>(
-                    <div className='column rounded-2xl border-gray-100 border-2 p-2' key={item.id}>
+                    <div className='bg-[#f7f7f7] column rounded-2xl border-gray-100 border-2 p-2' key={item.id}>
                         <div className='image flex justify-center'>
                             <img className='w-[70%]' src={item.productImage} />
                         </div>

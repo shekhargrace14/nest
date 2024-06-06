@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Navbar/>
-      <section className="bg-[url('./assets/slider-1-1.webp')] bg-no-repeat bg-center md:py-16 py-8  md:px-24 px-4 rounded-2xl mx-4" >
+      <section className="bg-[url('../../public/assets/slider-1-1.webp')] bg-no-repeat bg-center md:py-16 py-8  md:px-24 px-4 rounded-2xl mx-4" >
         <div className="row top xl:w-[50%] h-fit ">
           <h1 className='lg:text-7xl sm:text-6xl text-5xl   font-primary-font font-bold text-[#253d4e]'>Welcome to Nest, Your Natural Store</h1>
           <p className='lg:text-4xl text-1xl text-gray-600 py-8 '>Sign Up to get best deals in town</p>

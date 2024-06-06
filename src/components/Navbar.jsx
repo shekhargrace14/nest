@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo.svg";
+import logo from "../../public/assets/logo.svg";
 import { IoSearchOutline } from "react-icons/io5";
 // import { IoIosHeartEmpty } from "react-icons/io";
 import { LuUser } from "react-icons/lu";

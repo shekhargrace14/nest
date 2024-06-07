@@ -3,6 +3,7 @@ import { FaArrowRight, FaRegPaperPlane } from "react-icons/fa";
 import FeaturedCategory from '../components/FeaturedCategory';
 import PopularProduct from '../components/PopularProducts';
 import Deal from '../components/Deal'
+import CTA from '../components/CTA';
 // import image1 from "../assets/slider-1-1.webp";
 
 
@@ -57,6 +58,7 @@ const Home = () => {
 
       <PopularProduct/>
       <Deal/>
+      <CTA/>
     </div>
   )
 }

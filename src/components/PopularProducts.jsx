@@ -29,8 +29,8 @@ const PopularProduct = () =>{
                             <h3 className='text-lg'>{item.title}</h3>
                             <span className='text-sm text-gray-500 mt-3'>({item.rating})</span>
                             <div className="flex items-center gap-4 mt-4 ">
-                                <p className='text-base text-primary-color font-semibold'>$ {item.price} </p>
-                                <p className='text-gray-500 text-sm line-through'>{parseFloat(item.price)+5}</p>
+                                <p className='text-base text-primary-color font-semibold'>${item.price} </p>
+                                <p className='text-gray-500 text-sm line-through'>${parseFloat(item.price)+5}</p>
                             </div>
                             
                             <button className="flex flex-cols items-center gap-2 bg-primary-color text-sm text-white mt-4 py-1 px-2 rounded "><PiShoppingCartLight/> Add To Cart </button>

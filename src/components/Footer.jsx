@@ -1,4 +1,4 @@
-import { FaClock, FaEnvelope, FaLocationArrow, FaPhone } from "react-icons/fa"
+import { FaClock, FaEnvelope, FaPhone } from "react-icons/fa"
 import { FaLocationPin } from "react-icons/fa6"
 
 const Footer=()=>{

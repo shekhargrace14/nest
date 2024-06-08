@@ -1,6 +1,6 @@
 import { FaRegPaperPlane } from "react-icons/fa";
 
-const Cta = () =>{
+const CTA = () =>{
     return(
       <section className="bg-[url('../public/assets/bg/cta.png')]  bg-cover bg-no-repeat sm:bg-right bg-center md:py-16 py-8  md:px-24 px-4 rounded-2xl mx-4" >
         <div className="container mx-auto top h-fit ">
@@ -23,4 +23,4 @@ const Cta = () =>{
       </section>
     )
 }
-export default Cta;
+export default CTA;

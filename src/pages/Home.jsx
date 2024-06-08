@@ -3,7 +3,7 @@ import { FaArrowRight, FaRegPaperPlane } from "react-icons/fa";
 import FeaturedCategory from '../components/FeaturedCategory';
 import PopularProduct from '../components/PopularProducts';
 import Deal from '../components/Deal';
-import Cta from '../components/Cta';
+import Cta from "../components/Cta"
 import Usps from '../components/Usps';
 import Footer from '../components/Footer';
 // import image1 from "../assets/slider-1-1.webp";

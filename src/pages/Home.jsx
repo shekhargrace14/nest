@@ -1,24 +1,25 @@
-import Navbar from '../components/Navbar'
 import { FaArrowRight, FaRegPaperPlane } from "react-icons/fa";
-import FeaturedCategory from '../components/FeaturedCategory';
-import PopularProduct from '../components/PopularProducts';
+import FeatureProducts from '../components/FeatureProducts';
+// import PopularProduct from '../components/PopularProducts';
 import Deal from '../components/Deal';
 import CTA from "../components/CTA";
 import Usps from '../components/Usps';
-import Footer from '../components/Footer';
+// import { useProductContext } from "../context/productContext";
+
+
 // import image1 from "../assets/slider-1-1.webp";
 
 
 const Home = () => {
+  // const myName = useProductContext()
   return (
     <div>
-      <Navbar />
-      
+      {/* {myName} */}
       <section className="bg-[url('../public/assets/bg/slider-1-1.webp')]  bg-cover bg-no-repeat bg-center md:py-16 py-8  md:px-24 px-4 rounded-2xl mx-4" >
         <div className="container mx-auto top h-fit ">
           <div className='row flex'>
-            <div className='column w-5/12'>
-              <h1 className='lg:text-7xl sm:text-6xl text-5xl   font-primary-font font-bold text-[#253d4e]'>Welcome to Nest, Your Natural Store</h1>
+            <div className='column sm:w-8/12 w-12/12 '>
+              <h1 className='lg:text-7xl sm:text-6xl sm:mr-0 mr-20 text-4xl font-primary-font font-bold text-[#253d4e]'>Welcome to Nest, Your Natural Store</h1>
               <p className='lg:text-4xl text-1xl text-gray-600 py-8 '>Sign Up to get best deals in town</p>
               <form className='flex justify-between items-center pl-6 bg-white rounded-full sm:w-[70%] md:mt-16'>
                 <FaRegPaperPlane className='text-gray-400 w-[10%]' />
@@ -27,6 +28,7 @@ const Home = () => {
               </form>
             </div>
             <div className='column'>
+            
             </div>
 
           </div>
@@ -34,7 +36,7 @@ const Home = () => {
         <div className='row bottom '></div>
       </section>
       
-      <FeaturedCategory />
+      <FeatureProducts />
 
       <section className='lg:container mx-auto px-4'>
         <div className='row grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
@@ -64,11 +66,11 @@ const Home = () => {
         </div>
       </section>
 
-      <PopularProduct/>
+      {/* <PopularProduct/> */}
       <Deal/>
       <CTA/>
       <Usps/>
-      <Footer/>
+
       
     </div>
   )

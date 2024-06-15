@@ -5,7 +5,8 @@ import { IoSearchOutline } from "react-icons/io5";
 import { LuUser } from "react-icons/lu";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes,  } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,6 +18,7 @@ const Navbar = () => {
     { pageName: "Store", path: "/Store" },
     { pageName: "Deals", path: "/Deals" },
     { pageName: "Contact", path: "/contact" },
+    { pageName: "singleproduct", path: "/singleproduct" },
   ];
   const iconMenu = [
     // { pageName: "Wishlist", path: "/", icon: <IoIosHeartEmpty /> },
@@ -37,20 +39,22 @@ const Navbar = () => {
 
         </div>
         <div className="column w-1/3 grid justify-center">
-          <img className="w-40" src={logo} />
+          <Link to="/">
+            <img className="w-40" src={logo} />
+          </Link>
         </div>
-        <div className="column w-1/3 flex justify-end ">
+        {/* <div className="column w-1/3 flex justify-end ">
           <ul className="flex gap-4">
-            {iconMenu.map(({ pageName, path, icon }) => (
-              <Link key={pageName} path={path}>
+            {iconMenu.map(({ item, index }) => (
+              <Link key={index} path={item.path}>
                 <li className="flex items-center gap-2 text-primary-color text-2xl">
-                  {icon} {pageName}
+                  {item.icon} {item.pageName}
                   
                 </li>
               </Link>
             ))}
           </ul>
-        </div>
+        </div> */}
         {/* mobile menu starts */}
         <div className={`absolute top-[100%] p-4 w-1/2 h-dvh bg-red-100 lg:hidden ${isMenuOpen ? "" : "hidden"}`}>
           <ul className="">
@@ -73,7 +77,7 @@ const Navbar = () => {
           <ul className="flex ">
             {
               menu.map((item, index) => (
-              <Link key={index} path={item.path}>
+              <Link key={index} to={item.path}>
                 <li className="px-4 py-2  grid-flow-col content-center justify-center gap-1">
                   {item.icon} {item.pageName}
                 </li>

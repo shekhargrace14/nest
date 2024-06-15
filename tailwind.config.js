@@ -8,7 +8,9 @@ export default {
     extend: {
       colors:{
         "primary-color" : "#3bb77e",
-        "primary-color-dark" : "#2f9868"
+        "primary-color-dark" : "#2f9868",
+        "accent" : "#fdcd66"
+        
       },
       fontFamily:{
         'primary-font' : ["Quicksand", "sans-serif"]

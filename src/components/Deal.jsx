@@ -7,7 +7,7 @@ const PopularProduct = () =>{
     useEffect(()=>{
         setDeal(dealData)
     },[])
-    console.log(deal)
+    // console.log(deal)
     return(
         <section className='lg:container lg:mx-auto py-8 px-4'>
         <div className='row mb-8'>

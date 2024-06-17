@@ -1,6 +1,6 @@
 import { FaArrowRight, FaRegPaperPlane } from "react-icons/fa";
 import FeatureProducts from '../components/FeatureProducts';
-// import PopularProduct from '../components/PopularProducts';
+import PopularProduct from '../components/PopularProducts';
 import Deal from '../components/Deal';
 import CTA from "../components/CTA";
 import Usps from '../components/Usps';
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <PopularProduct/> */}
+      <PopularProduct/>
       <Deal/>
       <CTA/>
       <Usps/>

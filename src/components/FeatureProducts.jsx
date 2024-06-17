@@ -6,7 +6,7 @@ import { useContext } from 'react';
 const FeatureProducts = () => {
     const products = useContext(ProductContext)
     // const {products} = useContextProducts();
-    console.log(products)
+    // console.log(products)
 
 
     

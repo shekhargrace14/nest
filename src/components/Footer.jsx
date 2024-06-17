@@ -47,11 +47,11 @@ const Footer=()=>{
                         <h3 className="text-xl font-semibold mb-4">App & Payment</h3>
                         <p>From App Store or Google Play</p>
                         <div className="flex gap-4 my-4">
-                            <img className="w-[30%]" src="assets/app-store.avif"/>
-                            <img className="w-[30%]" src="assets/google-play.avif"/>
+                            <img className="w-[30%]" src="../assets/app-store.avif"/>
+                            <img className="w-[30%]" src="../assets/google-play.avif"/>
                         </div>
                         <p>Secured Payment Gateways</p>
-                        <img className="my-4" src="assets/payment.avif"/>
+                        <img className="my-4" src="../assets/payment.avif"/>
 
                         
 

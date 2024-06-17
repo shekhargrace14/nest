@@ -6,7 +6,7 @@ const ProductContext = createContext();
 
 const ProductProvider = ({children})=>{
     const [products, setProducts]= useState([]);
-    console.log(products)
+    // console.log(products)
     useEffect(()=>{
         setProducts(data)
     },[])

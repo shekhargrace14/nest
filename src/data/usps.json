@@ -1,26 +1,26 @@
 [
     {
-        "icon": "assets/usps/icon-box-1.svg",
+        "icon": "../assets/usps/icon-box-1.svg",
         "title": "Best prices & offers",
         "text":"Orders $50 or more"
     },
     {
-        "icon": "assets/usps/icon-box-2.svg",
+        "icon": "../assets/usps/icon-box-2.svg",
         "title": "Free delivery",
         "text":"24/7 amazing services"
     },
     {
-        "icon": "assets/usps/icon-box-3.svg",
+        "icon": "../assets/usps/icon-box-3.svg",
         "title": "Great daily deal",
         "text":"When you sign up"
     },
     {
-        "icon": "assets/usps/icon-box-4.svg",
+        "icon": "../assets/usps/icon-box-4.svg",
         "title": "Wide assortment",
         "text":"Mega Discounts"
     },
     {
-        "icon": "assets/usps/icon-box-5.svg",
+        "icon": "../assets/usps/icon-box-5.svg",
         "title": "Easy returns",
         "text":"Within 30 days"
     } 
